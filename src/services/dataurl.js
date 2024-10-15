@@ -1,9 +1,9 @@
 // export const imageUrl = "http://195.35.45.56:8002/uploads/"
 // export const MainUrl = "http://195.35.45.56:8002/auth/createSecure" //195.35.45.56:8002
-export const imageUrl = "http://localhost:8002/uploads/"
-export const MainUrl = "http://localhost:8002/auth/createSecure"
-// export const imageUrl = "https://api.coachingtest.com/uploads/"
-// export const MainUrl = "https://api.coachingtest.com/auth/createSecure"
+// export const imageUrl = "http://localhost:8002/uploads/"
+// export const MainUrl = "http://localhost:8002/auth/createSecure"
+export const imageUrl = "https://api.coachingtest.com/uploads/"
+export const MainUrl = "https://api.coachingtest.com/auth/createSecure"
 export const endPoint = {
     checkTokenValidation:"/check-authentication",
     addUser:"/add-user",

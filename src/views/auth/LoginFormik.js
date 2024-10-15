@@ -7,6 +7,8 @@ import AuthLogo from "../../layouts/logo/AuthLogo";
 import { ReactComponent as LeftBg } from '../../assets/images/bg/login-bgleft.svg';
 import { ReactComponent as RightBg } from '../../assets/images/bg/login-bg-right.svg';
 import { AdminLogin } from "../../services/user.service";
+import { HotToaster } from "../../utils/Toaster"
+
 // import { ProfileContext } from "../../components/contextProvider";
 const LoginFormik = () => {
   const navigate = useNavigate();
@@ -75,7 +77,7 @@ const LoginFormik = () => {
                   validationSchema={validationSchema}
                   onSubmit={(fields) => {
                     // eslint-disable-next-line no-alert
-                    alert(`SUCCESS!! :-)\n\n${JSON.stringify(fields, null, 4)}`);
+                    HotToaster(true, 'Login Succesful')
                     navigate('/');
                   }}
                   render={({ errors, touched }) => (
